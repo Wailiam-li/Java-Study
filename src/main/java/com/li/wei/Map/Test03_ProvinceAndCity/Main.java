@@ -31,16 +31,24 @@ public class Main {
         for (Map.Entry<String, ArrayList<String>> entry : entries) {
             ArrayList<String> cities = entry.getValue();
             String key = entry.getKey();
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < cities.size(); i++) {  //这里有个问题：最后一个元素末尾也是加上“，”，不是结果想要的...
-                if (i != cities.size() - 1) {    //因此用StringBuilder感觉会比较麻烦
-                    sb.append(cities.get(i)).append("，");
-                } else {
-                    sb.append(cities.get(i));
-                }
-            }
-            System.out.println(key + "=" + sb.toString());
-        }
 
+//            StringBuilder sb = new StringBuilder();
+//            for (int i = 0; i < cities.size(); i++) {  //这里有个问题：最后一个元素末尾也是加上“，”，不是结果想要的...
+//                if (i != cities.size() - 1) {    //因此用StringBuilder感觉会比较麻烦
+//                    sb.append(cities.get(i)).append("，");
+//                } else {
+//                    sb.append(cities.get(i));
+//                }
+//            }
+//            System.out.println(key + "=" + sb.toString());
+
+            //以下使用StringJoiner方法遍历出来
+             StringJoiner sj=new StringJoiner("，","","");
+             for (String city:cities){
+                 sj.add(city);
+             }
+            System.out.println(key+"="+sj);   //   ♠   ♦   ♣   ♥
+
+        }
     }
 }

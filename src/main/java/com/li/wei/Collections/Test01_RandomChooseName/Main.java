@@ -1,4 +1,4 @@
-package com.li.wei.Collections.Test01;
+package com.li.wei.Collections.Test01_RandomChooseName;
 
 import java.util.ArrayList;
 import java.util.Collections;
