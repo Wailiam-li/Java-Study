@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 public class MapStudy {
     public static void main(String[] args) {
+
+
         /**
         * 关于Map集合的三种遍历方式
          */
@@ -50,7 +52,7 @@ public class MapStudy {
         });
         System.out.println("简化写法------------------->");
 
-        map.forEach((String key, String value)-> System.out.println(key+"--"+value));
+        map.forEach((key,value)-> System.out.println(key+"--"+value));
                //注：forEach的底层源码也使用到了增强for，依次得到每一个键和值，再调用accept方法。
     }
 }

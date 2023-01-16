@@ -26,7 +26,7 @@ public class Main {
         //4.对 分隔开的字符 直接用索引
        String aa="李威-男-22";
        String aaa=aa.split("-")[1];
-       //对字符变量 使用.split(？)方法后，返回的是一个字符型数组！因此可以直接 接数组的索引下标.
+       //对字符变量 使用.split()方法后，返回的是一个字符型数组！因此可以直接 接数组的索引下标.
         System.out.println(aaa);
     }
 }

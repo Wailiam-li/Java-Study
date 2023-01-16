@@ -62,7 +62,7 @@ public class StreamMethod {
     }
 
     /*
-     * map功能：对流中所有元素做统一处理---> 1.转换流中的数据类型
+     * map功能：对流中所有元素做统一处理---> 一般用于 1.转换流中的数据类型
      */
     @Test  // 所有元素加前缀为例：
     public void mapConcat() {
